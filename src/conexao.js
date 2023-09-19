@@ -1,11 +1,11 @@
 const knex = require('knex')({
     client: 'pg',
     connection: {
-        host: 'silly.db.elephantsql.com',
-        port: 5432,
-        user: 'jqoaqkqr',
-        password: 'postgres://jqoaqkqr:uAnUOY1uf7o5HjHgmtceq-v6z8gAhfXw@silly.db.elephantsql.com/jqoaqkqr',
-        database: 'jqoaqkqr'
+        host: process.env.DB_host,
+        port: process.env.DB_port,
+        user: process.env.DB_user,
+        password: process.env.DB_password,
+        database: process.env.DB_database
 
     },
     ssl: { rejectUnauthorized: false }
