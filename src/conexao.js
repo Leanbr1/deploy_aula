@@ -1,4 +1,4 @@
-const knex = requrie('knex')({
+const knex = require('knex')({
     client: 'pg',
     connection: {
         host: 'silly.db.elephantsql.com',
@@ -7,5 +7,6 @@ const knex = requrie('knex')({
         password: 'postgres://jqoaqkqr:uAnUOY1uf7o5HjHgmtceq-v6z8gAhfXw@silly.db.elephantsql.com/jqoaqkqr',
         database: 'jqoaqkqr'
 
-    }
+    },
+    ssl: { rejectUnauthorized: false }
 });
