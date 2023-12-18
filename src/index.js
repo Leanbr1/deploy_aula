@@ -15,7 +15,7 @@ app.get('/', async (req, res) => {
         return res.status(500).json({ mensagem: 'erro servidor' });
     }
 })
-
+console.log("ue");
 const port = process.env.PORT || 3000;
 console.log("oi");
 app.listen(port, () => console.log(`servidor em pe na porta ${port}`));
