@@ -17,5 +17,5 @@ app.get('/', async (req, res) => {
 })
 
 const port = process.env.PORT || 3000;
-
+console.log("oi");
 app.listen(port, () => console.log(`servidor em pe na porta ${port}`));
